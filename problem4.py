@@ -1,17 +1,17 @@
 # Inisialisasi jumlah bakteri awal
-jumlah_bakteri_hidup = 100
+jumlah_bakteri = 100
 
-# Durasi dalam jam
-waktu = 500
+# Durasi dalam jam dalam sehari
+waktu_sehari = 24
 
-# Durasi hidup bakteri dalam jam (satu hari)
-durasi_hidup = 24
+# Waktu reproduksi satu bakteri (dalam jam)
+waktu_reproduksi = 20 / 60  # Ubah waktu reproduksi menjadi jam (20 menit)
 
-# Hitung berapa kali bakteri hidup dalam 500 jam
-reproduksi_periode = waktu // durasi_hidup
+# Hitung berapa kali reproduksi terjadi dalam sehari
+reproduksi_per_hari = waktu_sehari // waktu_reproduksi
 
-# Hitung jumlah bakteri yang masih hidup setelah 500 jam
-jumlah_bakteri_hidup_setelah_500_jam = jumlah_bakteri_hidup ** reproduksi_periode
+# Hitung jumlah bakteri setelah satu hari
+jumlah_bakteri_setelah_satu_hari = jumlah_bakteri * (2 ** reproduksi_per_hari)
 
 # Cetak hasilnya
-print("Jumlah bakteri yang masih hidup setelah 500 jam:", jumlah_bakteri_hidup_setelah_500_jam)
+print("Jumlah bakteri setelah satu hari:", jumlah_bakteri_setelah_satu_hari)
