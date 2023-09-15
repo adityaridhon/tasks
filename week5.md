@@ -4,10 +4,10 @@
 Group Members
  * Debora Intania Subekti (10231029) (2)
  * Aditya Ridho Nugroho (11231003) (6)
- * Naomi Ratna Marisha Guen (11231069) ()
- * Erzha Nafilah Rosady (16231020) ()
- * Sofia Dawani Silaban (16231055) ()
- * Nurjanah Oktafia (20231057) ()
+ * Naomi Ratna Marisha Guen (11231069) (4)
+ * Erzha Nafilah Rosady (16231020) (3)
+ * Sofia Dawani Silaban (16231055) (1)
+ * Nurjanah Oktafia (20231057) (5)
 
 <!-- Problem 1 start -->
 ## Problem 1
@@ -21,12 +21,16 @@ Menggunakan perintah **print()** dalam Python, tuliskan program Python untuk men
 ### Answer
 
 Untuk memunculkan keluaran seperti permasalahan diatas, dapat dituliskan kode seperti dibawah:
+```py
+print ("===== ===== =   =")
+print ("  =     =   =  =" )
+print ("  =     =   = ="  )
+print ("  =     =   =  =" )
+print ("=====   =   =   =")
+```
+Yang akan menghasilkan output :
 
-<img src="img/code1.png">
-
-yang dapat menghasilkan output:
-
-<img src="img/outputp1.png">
+<img src="img/outputp1.png"><br>
 
 
 <!-- Problem 1 end -->
@@ -63,7 +67,25 @@ Diberikan permasalahan ketika user memberikan dua masukan angka, sebut sebagai v
 
 Untuk menyelesaikan permasalahan diatas, kode yang dibutuhkan adalah :
 
-<img src="">
+```py
+a = int(input("Masukkan angka pertama: "))
+b = int(input("Masukkan angka kedua: "))
+    
+jumlah     = a+b
+selisih    = a-b
+hasil_kali = a*b
+    
+print("jumlah dari a + b adalah: ", jumlah)
+print("jumlah dari a - b adalah: ", selisih)
+print("hasil kali a dengan b adalah: ",hasil_kali)
+
+
+```
+
+Dengan hasil _Test case_ dibawah:
+
+<img src="img/testcase2.png"><br>
+
 <!-- Problem 3 end -->
 
 <!-- Problem 4 start -->
@@ -75,6 +97,26 @@ Jawablah pertanyaan tersebut dengan membuat program Python. Gunakan variabel **j
 ### Answer
 
 Dengan Variabel **jumlah_bakteri** dan **waktu** maka kode yang dibutuhkan untuk menyelesaikan permasalahan 4 adalah :
+
+```py
+print("=== Program Meghitung Jumlah Bakteri dalam satu hari ===")
+
+jumlah_bakteri   = 100
+waktu            = 1440 #(1hari = 24jam = 1440menit)
+waktu_pembelahan = 20 #satuan dalam menit
+
+#rumus menghitung jumlah bakteri 
+total_bakteri  = jumlah_bakteri * (2 ** (waktu / waktu_pembelahan))
+
+print("Jumlah bakteri setelah sehari adalah: ",total_bakteri)
+
+print("\n=== Program Selesai ===")
+
+```
+Yang menghasilkan output dibawah ini :
+
+<img src="img/output4.png">
+
 
 
 
@@ -90,12 +132,31 @@ Jawablah pertanyaan tersebut dengan membuat program Python. Gunakan variabel **j
 
 Untuk menjawab pertanyaan tersebut dengan membuat program Python. Menggunakan Gunakan variabel **jumlah_bakteri_hidup**, variabel **jumlah_bakteri_meninggal** dan variabel **waktu**. :
 
+```py
+jumlah_bakteri_hidup     = 0
+jumlah_bakteri_meninggal = 0
+waktu                    = 500 #jam
+
+#Menghitung jumlah bakteri hidup setelah 500jam
+if waktu >= 24:
+    jumlah_bakteri_hidup     = 2 ** (waktu // 24)
+    jumlah_bakteri_meninggal = 2 ** (waktu // 24) - 1
+
+#Mencetak total bakteri yang hidup dan meninggal
+print("Jumlah Bakteri yang Masih Hidup adalah: ", jumlah_bakteri_hidup)
+print("Jumlah Bakteri yang Sudah Meninggal adalah: ", jumlah_bakteri_meninggal)
+
+```
+
+Yang menghasilkan Output :
+
+<img src="img/output5.png">
+
 <!-- Problem 5 end -->
 
 <!-- Problem 6 start -->
  
 ## Problem 6
-
 Satu hari akan ditambahkan pada kalender hampir tiap empat tahun sekali yaitu pada tanggal 29 Februari, hari tersebut disebut hari kabisat. Hari kabisat tersebut ditambahkan dengan tujuan karena dalam satu tahun planet bumi mengelilingi matahari tidak tepat bilangan bulat, namun 365.25 hari. Suatu tahun yang memuat hari kabisat disebut tahun kabisat.
 
 Di dalam kalender Masehi (kalender yang umum digunakan di seluruh dunia), ada tiga kondisi untuk mengidentifikasikan suatu tahun adalah tahun kabisat
@@ -108,15 +169,19 @@ Buatlah flowchart dari program penentuan suatu tahun apakah tahun kabisat atau b
 
 ### Answer
 
-Flowchart untuk permasalahan 6 adalah :
+Flowchart untuk tahun 2024 adalah dibawah ini :
 
-<img src="img/flowchartkabisat.png">
+<img src="img/flow2024.png"><br>
 
+Sedangkan untuk flowchart tahun 2023 yaitu :
 
+<img src="img/flow2023.png"><br>
 
+Selanjutnya untuk flowchart tahun 2000 yaitu :
 
+<img src="img/flow2000.png"><br>
 
+Dan yang terakhir untuk flowchart tahun 1900 :
 
-
-
+<img src="img/flow1900.png">
 <!-- Problem 6 end -->
